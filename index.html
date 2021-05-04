@@ -71,14 +71,14 @@
 
     <main class="main">
       <!-- about start -->
-      <section class="about" id="about">
+      <section class="about__article article" id="about">
+        <h2 class="article__title section-title">О нас</h2>
         <div class="wrapper wrapper-small">
-          <article class="about__article article">
-            <h2 class="article__title section-title">О нас</h2>
+          <div class="flex-container">
             <figure class="article__image">
               <img
                 src="img/article-image.jpg"
-                width="444.54"
+                width="445"
                 height="465"
                 alt="interior's photo"
                 class="article__image"
@@ -97,15 +97,26 @@
                 достойно моего дома!»
               </p>
             </div>
-            <footer class="article__footer">
-              <ul class="article__list">
-                <li class="article__item">5 <span>лет опыта</span></li>
-                <li class="article__item">100 <span>проектов</span></li>
-                <li class="article__item">10 <span>наград</span></li>
-              </ul>
-            </footer>
-          </article>
+          </div>
         </div>
+        <footer class="article__footer">
+          <div class="wrapper wrapper-small">
+            <ul class="article__list">
+              <li class="article__item">
+                5 <br />
+                <span class="article__span">лет опыта</span>
+              </li>
+              <li class="article__item">
+                100
+                <span class="article__span">проектов</span>
+              </li>
+              <li class="article__item">
+                10
+                <span class="article__span">наград</span>
+              </li>
+            </ul>
+          </div>
+        </footer>
       </section>
       <!-- about end -->
 
@@ -114,7 +125,7 @@
         <div class="wrapper wrapper-big">
           <h2 class="projects__title section-title">Наши работы</h2>
           <div class="projects__pictures">
-            <figure class="projects__image">
+            <figure class="projects__image projects__image_sm">
               <img
                 src="img/picture-1.jpg"
                 alt="Квартира-студия 30 кв.м."
@@ -131,7 +142,7 @@
                 </p>
               </figcaption>
             </figure>
-            <figure class="projects__image">
+            <figure class="projects__image projects__image_lg">
               <img src="img/picture-2.jpg" alt="" class="projects__thumb" />
               <figcaption class="projects__description">
                 <h3 class="projects__description-title">
@@ -144,7 +155,7 @@
                 </p>
               </figcaption>
             </figure>
-            <figure class="projects__image">
+            <figure class="projects__image projects__image_lg">
               <img src="img/picture-3.jpg" alt="" class="projects__thumb" />
               <figcaption class="projects__description">
                 <h3 class="projects__description-title">
@@ -157,7 +168,7 @@
                 </p>
               </figcaption>
             </figure>
-            <figure class="projects__image">
+            <figure class="projects__image projects__image_sm">
               <img src="img/picture-4.jpg" alt="" class="projects__thumb" />
               <figcaption class="projects__description">
                 <h3 class="projects__description-title">
