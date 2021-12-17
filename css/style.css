@@ -236,7 +236,7 @@ body {
   margin-bottom: 40px;
 }
 .projects__image {
-  background: rgba(100, 72, 69, 0.8);
+  background: #644845;
   position: relative;
 }
 .projects__image_sm {
@@ -288,7 +288,59 @@ body {
 .projects__more:hover,
 .projects__more:focus {
   background: url("../img/svg/arrow-more.svg") no-repeat 62% center;
+  color: #644845;
 }
 /*
 * Projects styles end
+*/
+/*
+* Team styles start
+*/
+.team {
+  background-color: #e2c4ba;
+  padding-bottom: 50px;
+}
+.team__title {
+  padding-top: 50px;
+}
+.team__members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  column-gap: 38px;
+}
+.team__member {
+  width: 320px;
+}
+.team__member-pic {
+  margin-bottom: 10px;
+}
+/*
+* Team styles end
+*/
+/*
+* Projects__steps styles start
+*/
+.projects__steps {
+  margin-top: -15px;
+  background-color: #e2c4ba;
+}
+.projects__steps-title {
+  padding-left: 46px;
+}
+.projects__steps-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+}
+.projects__steps-item {
+  width: 285px;
+  text-align: center;
+  padding-top: 90px;
+}
+.projects__steps-item {
+  background: url(../img/svg/step-1.svg) no-repeat center top;
+}
+/*
+* Projects__steps styles end
 */
