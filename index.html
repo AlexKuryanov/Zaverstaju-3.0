@@ -315,16 +315,21 @@
               name="username"
               id="username"
               placeholder="Ваше имя"
+              minlength="3"
+              maxlength="20"
+              required
             />
             <input
               type="tel"
               name="userphone"
               id="userphone"
-              placeholder="Введите телефон"
+              placeholder="Введите телефон +7-903-123-1234"
+              pattern="\+[\d()-]{11,17}"
+              required
             />
-            <a href="#!" type="submit" class="button contacts__button link">
+            <button href="#!" type="submit" class="button contacts__button link">
               Оставить заявку
-            </a>
+            </button>
             <!-- <input type="submit" value="Оставить заявку" /> -->
           </form>
           <img

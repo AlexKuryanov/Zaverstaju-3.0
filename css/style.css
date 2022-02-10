@@ -487,7 +487,7 @@ body {
   color: #ffffff;
 }
 
-.form__field input:not(input[type="submit"]) {
+.form__field input {
   width: 96%;
   background-color: transparent;
   border-bottom: 2px solid #ffffff;
@@ -504,6 +504,13 @@ body {
 
 input[type="tel"] {
   margin-bottom: 60px;
+}
+
+input:invalid {
+  border-bottom-color: red;
+}
+input:valid {
+  border-bottom-color: green;
 }
 
 /*
