@@ -28,6 +28,10 @@
  * main styles start
  */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   width: 100%;
   margin: 0 auto;
@@ -61,6 +65,11 @@ body {
   left: 0;
   width: 100%;
   padding-top: 38px;
+  transition: background-color 0.5s linear;
+}
+
+.header:hover {
+  background-color: #8d7370;
 }
 
 .header__wrapper {
@@ -74,6 +83,15 @@ body {
   font-size: 16px;
   line-height: 20px;
   background: url("../img/svg/logo-icon.svg") no-repeat left -3px;
+}
+
+.link {
+  color: #533738;
+  transition: color 0.5s linear;
+}
+
+.link:hover {
+  color: #cc8b86;
 }
 
 .header__logo-link {
@@ -94,7 +112,6 @@ body {
   display: block;
   font-size: 16px;
   line-height: 20px;
-  color: #533738;
 }
 
 .header__contact {
@@ -136,6 +153,7 @@ body {
   font-size: 40px;
   line-height: 50px;
   text-align: center;
+  padding-top: 65px;
   padding-left: 3px;
   text-transform: uppercase;
   margin-bottom: 40px;
@@ -154,17 +172,25 @@ body {
   width: 444px;
   margin-bottom: 25px;
   padding-left: 3px;
+  padding-bottom: 20px;
 }
 
-.intro__button {
+.button {
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
+  color: #533738;
   background-color: #cc8b86;
   padding-top: 25px;
   padding-left: 69px;
   padding-bottom: 24px;
   padding-right: 69px;
+  cursor: pointer;
+  transition: background-color 0.5s linear;
+}
+
+.button:hover {
+  background-color: #e2c4ba;
 }
 /*
 * Intro styles end
@@ -245,30 +271,44 @@ body {
 .projects__image_lg {
   grid-column: span 7;
 }
+
+.projects__thumb {
+  transition: opacity 0.5s linear;
+}
 .projects__image:hover .projects__thumb {
   opacity: 0.2;
+}
+
+.projects__description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .projects__description-title {
   width: 270px;
   position: absolute;
-  top: 86px;
-  left: 110px;
+  top: 30%;
+  left: 50%;
   font-weight: 500;
   font-size: 30px;
   line-height: 37px;
-  text-align: center;
   color: transparent;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s linear;
 }
 .projects__description-text {
   width: 420px;
   position: absolute;
-  top: 180px;
-  left: 37px;
+  top: 60%;
+  left: 50%;
   font-weight: normal;
   font-size: 18px;
   line-height: 30px;
   color: transparent;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s linear;
 }
 .projects__image:hover .projects__description-title,
 .projects__image:hover .projects__description-text {
@@ -285,11 +325,13 @@ body {
   background: url("../img/svg/arrow-more.svg") no-repeat 60.5% center;
   transition: 0.2s all;
 }
+
 .projects__more:hover,
 .projects__more:focus {
   background: url("../img/svg/arrow-more.svg") no-repeat 62% center;
-  color: #644845;
+  color: #e2c4ba;
 }
+
 /*
 * Projects styles end
 */
@@ -300,9 +342,7 @@ body {
   background-color: #e2c4ba;
   padding-bottom: 50px;
 }
-.team__title {
-  padding-top: 50px;
-}
+
 .team__members {
   display: flex;
   flex-wrap: wrap;
@@ -332,15 +372,164 @@ body {
   display: flex;
   flex-wrap: wrap;
   column-gap: 20px;
+  counter-reset: number;
 }
 .projects__steps-item {
   width: 285px;
+  padding-top: 100px;
   text-align: center;
-  padding-top: 90px;
+  position: relative;
 }
-.projects__steps-item {
-  background: url(../img/svg/step-1.svg) no-repeat center top;
+
+.projects__steps-item::before {
+  counter-increment: number;
+  content: counter(number);
+  width: 70px;
+  height: 70px;
+  padding-top: 20px;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 30px;
+  background-color: #8d7370;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 /*
 * Projects__steps styles end
+*/
+
+/*
+* Reviews styles start
+*/
+.reviews {
+  padding-bottom: 65px;
+}
+
+.reviews-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reviews__btn {
+  width: 72px;
+  height: 72px;
+  background-color: #cc8b86;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all 0.5s linear;
+}
+
+.reviews__btn:hover {
+  /* filter: invert(28%) sepia(92%) saturate(1720%) hue-rotate(315deg)
+    brightness(16%) contrast(12%); */
+  background-color: #ffffff;
+  border: 2px solid #cc8b86;
+}
+
+.reviews__btn:focus {
+  border: 2px solid #cc8b86;
+}
+
+.reviews__quote {
+  max-width: 407px;
+}
+
+.reviews__text {
+  margin-bottom: 40px;
+}
+
+.reviews__pic-wrap {
+  max-width: 407px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.reviews__btn_prev {
+  background-image: url(../img/svg/arrow-left.svg);
+}
+
+.reviews__btn_next {
+  background-image: url(../img/svg/arrow-right.svg);
+}
+
+/*
+* Reviews styles end
+*/
+
+/*
+* Contacts styles start
+*/
+
+.contacts {
+  background-color: #8d7370;
+}
+
+.contacts-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts__title {
+  color: #ffffff;
+  text-align: left;
+  padding-left: 0;
+}
+
+.form__text {
+  color: #ffffff;
+}
+
+.form__field input:not(input[type="submit"]) {
+  width: 96%;
+  background-color: transparent;
+  border-bottom: 2px solid #ffffff;
+  font-size: 18px;
+  line-height: 30px;
+  padding-top: 44px;
+  padding-bottom: 10px;
+  color: #f6ede9;
+}
+
+::placeholder {
+  color: #f6ede9;
+}
+
+input[type="tel"] {
+  margin-bottom: 60px;
+}
+
+/*
+* Contacts styles end
+*/
+
+/*
+* Footer styles start
+*/
+.footer {
+  padding: 37px;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__phone {
+  margin-right: 42px;
+}
+
+.footer__company {
+  margin-left: auto;
+}
+
+/*
+* Footer styles end
 */

@@ -15,34 +15,42 @@
       <div class="wrapper-big">
         <div class="header__wrapper">
           <div class="header__logo">
-            <a href="#" class="header__logo-link">SCANDI</a>
+            <a href="#" class="link header__logo-link">SCANDI</a>
           </div>
           <nav class="header__navigation">
             <ul class="header__navigation-list">
               <li class="header__navigation-item">
-                <a href="#about" class="header__navigation-link">О компании</a>
+                <a href="#about" class="link header__navigation-link"
+                  >О компании</a
+                >
               </li>
               <li class="header__navigation-item">
-                <a href="#projects" class="header__navigation-link"
+                <a href="#projects" class="link header__navigation-link"
                   >Портфолио</a
                 >
               </li>
               <li class="header__navigation-item">
-                <a href="#!" class="header__navigation-link">Команда</a>
+                <a href="#team" class="link header__navigation-link">Команда</a>
               </li>
               <li class="header__navigation-item">
-                <a href="#!" class="header__navigation-link">Как мы работаем</a>
+                <a href="#steps" class="link header__navigation-link"
+                  >Как мы работаем</a
+                >
               </li>
               <li class="header__navigation-item">
-                <a href="#!" class="header__navigation-link">Отзывы клиентов</a>
+                <a href="#reviews" class="link header__navigation-link"
+                  >Отзывы клиентов</a
+                >
               </li>
               <li class="header__navigation-item">
-                <a href="#!" class="header__navigation-link">Оставить заявку</a>
+                <a href="#contacts" class="link header__navigation-link"
+                  >Оставить заявку</a
+                >
               </li>
             </ul>
           </nav>
           <div class="header__contact">
-            <a class="header__phone" href="tel:+79818574624"
+            <a class="link header__phone" href="tel:+79818574624"
               >+7 (981) 857-46-24</a
             >
           </div>
@@ -62,9 +70,9 @@
           Подбираем текстиль, мебель и аксессуары под ваш интерьер, находим
           магазины и помогаем организовать доставку
         </p>
-        <button type="submit" class="button intro__button">
+        <a href="#contacts" type="submit" class="button intro__button link">
           Оставить заявку
-        </button>
+        </a>
       </div>
     </section>
     <!-- intro end -->
@@ -182,13 +190,13 @@
               </figcaption>
             </figure>
           </div>
-          <a href="#!" class="projects__more">Смотреть ещё</a>
+          <a href="#!" class="link projects__more">Смотреть ещё</a>
         </div>
       </section>
       <!-- projects end -->
 
       <!-- team start -->
-      <section class="team">
+      <section class="team" id="team">
         <div class="wrapper wrapper-small">
           <h2 class="team__title section-title">Команда</h2>
           <div class="team__members">
@@ -239,7 +247,7 @@
       </section>
       <!-- team end -->
       <!-- projects__steps start -->
-      <section class="projects__steps">
+      <section class="projects__steps" id="steps">
         <div class="wrapper wrapper-big">
           <h2 class="projects__steps-title section-title">Как мы работаем</h2>
           <ul class="projects__steps-list">
@@ -264,9 +272,11 @@
       <!-- projects__steps start -->
 
       <!-- reviews start -->
-      <section class="reviews">
+      <section class="reviews" id="reviews">
         <div class="wrapper wrapper-small">
           <h2 class="reviews__title section-title">Отзывы</h2>
+          <div class="reviews-wrap">
+            <button class="reviews__btn reviews__btn_prev"></button>
           <blockquote class="reviews__quote">
             <p class="reviews__text">
               «Восторг! Спасибо, за комфортную жизнь. Очень рада, что выбрала
@@ -279,26 +289,30 @@
             <p class="reviews__text">
               Буду советовать и своим друзьям к вам обращаться!»
             </p>
-            <cite class="reviews__author"></cite>
+            <cite class="reviews__author">АННА БЕЛОВСКАЯ</cite>
           </blockquote>
-          <img src="img/review-1.jpg" alt="picture-1" class="reviews__pic" />
-          <img src="img/review-2.jpg" alt="picture-2" class="reviews__pic" />
+          <div class="reviews__pic-wrap">
+            <img src="img/review-1.jpg" alt="picture-1" class="reviews__pic" />
+            <img src="img/review-2.jpg" alt="picture-2" class="reviews__pic" />
+          </div>
+          <button class="reviews__btn reviews__btn_next"></button>
+          </div>
         </div>
       </section>
       <!-- reviews end -->
 
       <!-- form start -->
-      <section class="form">
-        <div class="wrapper wrapper-big">
-          <h2 class="form__title section-title">Оставить заявку</h2>
+      <section class="contacts" id="contacts">
+        <div class="wrapper wrapper-big contacts-wrapper">          
           <form action="/" class="form__field">
+            <h2 class="contacts__title section-title">Оставить заявку</h2>
             <p class="form__text">
               Оставьте свои контакты. Менеджер перезвонит в удобное вам время и
               ответит на все вопросы.
             </p>
             <input
               type="text"
-              class="username"
+              name="username"
               id="username"
               placeholder="Ваше имя"
             />
@@ -308,7 +322,10 @@
               id="userphone"
               placeholder="Введите телефон"
             />
-            <input type="submit" value="Оставить заявку" />
+            <a href="#!" type="submit" class="button contacts__button link">
+              Оставить заявку
+            </a>
+            <!-- <input type="submit" value="Оставить заявку" /> -->
           </form>
           <img
             class="form__map-pic"
@@ -323,7 +340,7 @@
     </main>
     <!-- footer start -->
     <footer class="footer">
-      <div class="wrapper wrapper-big">
+      <div class="wrapper wrapper-big footer-wrapper">
         <p class="footer__phone">+7 (981) 857-46-24</p>
         <p class="footer__address">
           г. Санкт-петербург, ул. Большая Конюшенная, 19
