@@ -1,4 +1,4 @@
-# Zaverstaju-3.0
+# Zaverstaju-5.0
 
 Учебный проект по фиксированной верстке от [html-academy](https://htmlacademy.ru/tracks/marathon-zaverstai)
 
