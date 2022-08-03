@@ -1,4 +1,4 @@
-# Zaverstaju-5.0
+# Zaverstaju-3.0
 
 Учебный проект по фиксированной верстке от [html-academy](https://htmlacademy.ru/tracks/marathon-zaverstai)
 
@@ -6,7 +6,7 @@
 https://www.figma.com/file/MTtAmzLAzCsMHDsEwTBgLg/%D0%9C%D0%B0%D1%80%D0%B0%D1%84%D0%BE%D0%BD-3.0?node-id=0%3A1
 
 Результат:
-https://alexkuryanov.github.io/Zaverstaju-5.0/
+https://alexkuryanov.github.io/Zaverstaju-3.0/
 
 Что важно учесть во время работы над проектом:
 
