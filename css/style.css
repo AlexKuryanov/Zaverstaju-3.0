@@ -1,5 +1,4 @@
 /* montserrat-regular - latin_cyrillic */
-
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
@@ -12,7 +11,6 @@
 }
 
 /* montserrat-500 - latin_cyrillic */
-
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
@@ -26,8 +24,7 @@
 
 /*
  * main styles start
- */
-
+*/
 html {
   scroll-behavior: smooth;
 }
@@ -50,15 +47,13 @@ body {
   max-width: 1036px;
   margin: 0 auto;
 }
-
 /*
  * main styles end
- */
+*/
 
 /*
 * header styles start
 */
-
 .header {
   position: fixed;
   top: 0;
@@ -132,7 +127,6 @@ body {
 /*
 * Intro styles start
 */
-
 .intro__main-title {
   font-size: 0;
   line-height: 0;
@@ -196,6 +190,7 @@ body {
 /*
 * Intro styles end
 */
+
 /*
 * About styles start
 */
@@ -203,14 +198,17 @@ body {
   width: 100%;
   background-color: #e5e5e5;
 }
+
 .flex-container {
   display: flex;
   column-gap: 65px;
   margin-bottom: 21px;
 }
+
 .article__title {
   padding-top: 66px;
 }
+
 .article__paragraph {
   margin-bottom: 30px;
 }
@@ -219,11 +217,13 @@ body {
   width: 100%;
   background-color: #8d7370;
 }
+
 .article__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
 .article__item {
   font-size: 50px;
   line-height: 62px;
@@ -233,6 +233,7 @@ body {
   padding-top: 86px;
   padding-bottom: 81px;
 }
+
 .article__span {
   display: block;
   font-weight: 500;
@@ -243,6 +244,7 @@ body {
 /*
 * About styles end
 */
+
 /*
 * Projects styles start
 */
@@ -251,24 +253,29 @@ body {
   padding-bottom: 66px;
   background-color: #e5e5e5;
 }
+
 .projects__title {
   text-align: left;
   padding-top: 65px;
   padding-left: 2px;
 }
+
 .projects__pictures {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 30px 20px;
   margin-bottom: 40px;
 }
+
 .projects__image {
   background: #644845;
   position: relative;
 }
+
 .projects__image_sm {
   grid-column: span 5;
 }
+
 .projects__image_lg {
   grid-column: span 7;
 }
@@ -276,6 +283,7 @@ body {
 .projects__thumb {
   transition: opacity 0.5s linear;
 }
+
 .projects__image:hover .projects__thumb {
   opacity: 0.2;
 }
@@ -299,6 +307,7 @@ body {
   transform: translate(-50%, -50%);
   transition: all 0.5s linear;
 }
+
 .projects__description-text {
   width: 420px;
   position: absolute;
@@ -311,6 +320,7 @@ body {
   transform: translate(-50%, -50%);
   transition: all 0.5s linear;
 }
+
 .projects__image:hover .projects__description-title,
 .projects__image:hover .projects__description-text {
   color: #ffffff;
@@ -359,9 +369,11 @@ body {
   justify-content: space-between;
   column-gap: 38px;
 }
+
 .team__member {
   width: 320px;
 }
+
 .team__member-pic {
   margin-bottom: 10px;
 }
@@ -376,15 +388,18 @@ body {
   margin-top: -15px;
   background-color: #e2c4ba;
 }
+
 .projects__steps-title {
   padding-left: 46px;
 }
+
 .projects__steps-list {
   display: flex;
   flex-wrap: wrap;
   column-gap: 20px;
   counter-reset: number;
 }
+
 .projects__steps-item {
   width: 285px;
   padding-top: 100px;
@@ -521,7 +536,6 @@ input:invalid {
 input:valid {
   border-bottom-color: green;
 }
-
 /*
 * Contacts styles end
 */
@@ -546,7 +560,6 @@ input:valid {
 .footer__company {
   margin-left: auto;
 }
-
 /*
 * Footer styles end
 */
