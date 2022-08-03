@@ -1,26 +1,26 @@
 /* montserrat-regular - latin_cyrillic */
 
 @font-face {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  src: local(""),
-    url("../fonts/montserrat-v15-latin_cyrillic-regular.woff2") format("woff2"),
+  src: local(''),
+    url('../fonts/montserrat-v15-latin_cyrillic-regular.woff2') format('woff2'),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("../fonts/montserrat-v15-latin_cyrillic-regular.woff") format("woff");
+      url('../fonts/montserrat-v15-latin_cyrillic-regular.woff') format('woff');
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* montserrat-500 - latin_cyrillic */
 
 @font-face {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
-  src: local(""),
-    url("../fonts/montserrat-v15-latin_cyrillic-500.woff2") format("woff2"),
+  src: local(''),
+    url('../fonts/montserrat-v15-latin_cyrillic-500.woff2') format('woff2'),
     /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("../fonts/montserrat-v15-latin_cyrillic-500.woff") format("woff");
+      url('../fonts/montserrat-v15-latin_cyrillic-500.woff') format('woff');
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
@@ -35,7 +35,7 @@ html {
 body {
   width: 100%;
   margin: 0 auto;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 18px;
   line-height: 30px;
   color: #533738;
@@ -83,7 +83,7 @@ body {
   text-transform: uppercase;
   font-size: 16px;
   line-height: 20px;
-  background: url("../img/svg/logo-icon.svg") no-repeat left -3px;
+  background: url('../img/svg/logo-icon.svg') no-repeat left -3px;
 }
 
 .link {
@@ -141,7 +141,7 @@ body {
 .intro {
   min-height: 776px;
   background-color: #f9eae1;
-  background-image: url("../img/header-bg.jpg");
+  background-image: url('../img/header-bg.jpg');
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: cover;
@@ -315,6 +315,7 @@ body {
 .projects__image:hover .projects__description-text {
   color: #ffffff;
 }
+
 .projects__more {
   display: block;
   padding-right: 71px;
@@ -323,19 +324,27 @@ body {
   line-height: 37px;
   text-align: center;
   color: #533738;
-  background: url("../img/svg/arrow-more.svg") no-repeat 60.5% center;
+  transition: 0.2s all;
+}
+
+.projects__more svg {
+  fill: #533738;
   transition: 0.2s all;
 }
 
 .projects__more:hover,
 .projects__more:focus {
-  background: url("../img/svg/arrow-more.svg") no-repeat 62% center;
-  color: #e2c4ba;
+  color: #8d7370;
 }
 
+.projects__more:hover svg {
+  fill: #8d7370;
+  transform: translateX(10px);
+}
 /*
 * Projects styles end
 */
+
 /*
 * Team styles start
 */
@@ -359,6 +368,7 @@ body {
 /*
 * Team styles end
 */
+
 /*
 * Projects__steps styles start
 */
@@ -423,12 +433,10 @@ body {
   border-radius: 50%;
   background-repeat: no-repeat;
   background-position: center;
-  transition: all 0.5s linear;
+  transition: all 0.2s linear;
 }
 
 .reviews__btn:hover {
-  /* filter: invert(28%) sepia(92%) saturate(1720%) hue-rotate(315deg)
-    brightness(16%) contrast(12%); */
   background-color: #ffffff;
   border: 2px solid #cc8b86;
 }
@@ -452,14 +460,16 @@ body {
   row-gap: 20px;
 }
 
-.reviews__btn_prev {
-  background-image: url(../img/svg/arrow-left.svg);
+.reviews__btn_prev svg,
+.reviews__btn_next svg {
+  fill: #ffffff;
+  transition: all 0.2s linear;
 }
 
-.reviews__btn_next {
-  background-image: url(../img/svg/arrow-right.svg);
+.reviews__btn_prev:hover svg,
+.reviews__btn_next:hover svg {
+  fill: #cc8b86;
 }
-
 /*
 * Reviews styles end
 */
@@ -467,7 +477,6 @@ body {
 /*
 * Contacts styles start
 */
-
 .contacts {
   background-color: #8d7370;
 }
@@ -502,7 +511,7 @@ body {
   color: #f6ede9;
 }
 
-input[type="tel"] {
+input[type='tel'] {
   margin-bottom: 60px;
 }
 
